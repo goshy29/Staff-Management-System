@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class StaffManagementSystem {
     public static void main(String[] args) {
+        // enter your file path to Employee.csv
         String file = "C:\\Users\\G\\Desktop\\Sirma Java Course\\Staff-Management-System\\StaffManagementSystem\\Employee.csv";
         EmployeeService service = new StaffService(file);
         Manager manager = new Manager(service);
@@ -18,7 +19,9 @@ public class StaffManagementSystem {
         while (isRunning) {
             int menuIndex = Integer.parseInt(sc.nextLine());
             manager.execute(menuIndex);
-
+            if (menuIndex == 8) {
+                isRunning = false;
+            }
         }
     }
     private static void displayCommands() {

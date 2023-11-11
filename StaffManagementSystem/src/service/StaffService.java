@@ -1,5 +1,6 @@
 package service;
 
+import file.CSVReader;
 import file.CSVWriter;
 import model.Employee;
 
@@ -30,21 +31,22 @@ public class StaffService extends EmployeeService {
     @Override
     public List<Employee> getAllEmployees() {
         //System.out.println("from staff service");
+        CSVReader.read(file);
         return getAllEmployees();
     }
 
     @Override
     public List<Employee> getEmployeesById(int id) {
-        return super.getEmployeesById(id);
+        return getEmployeesById(id);
     }
 
     @Override
     public List<Employee> getEmployeesByName(String name) {
-        return super.getEmployeesByName(name);
+        return getEmployeesByName(name);
     }
 
     @Override
     public List<Employee> getEmployeesByRole(String role) {
-        return super.getEmployeesByRole(role);
+        return getEmployeesByRole(role);
     }
 }
