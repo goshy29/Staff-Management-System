@@ -13,7 +13,7 @@ public class CSVReader {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] splitValues = line.trim().split(", ");
-                
+
             }
         } catch (IOException e) {
             e.printStackTrace();
