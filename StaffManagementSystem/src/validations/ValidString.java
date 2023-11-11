@@ -10,7 +10,7 @@ public class ValidString {
         do {
             System.out.print(message);
             input = scanner.nextLine().trim();
-            if (input.isEmpty()) {
+            if (input.isEmpty() || input.equals(" ") || input.equals(",")) {
                 System.out.println("Invalid input.");
             }
         } while (input.isEmpty());

@@ -2,7 +2,7 @@ package service;
 
 import model.Employee;
 
-import java.util.List;
+import java.util.HashMap;
 
 public class EmployeeService implements Service {
     @Override
@@ -21,23 +21,28 @@ public class EmployeeService implements Service {
     }
 
     @Override
-    public List<Employee> getAllEmployees() {
+    public HashMap<Integer, Employee> getAllEmployees() {
         System.out.println("from employee service");
         return null;
     }
 
     @Override
-    public List<Employee> getEmployeesById(int id) {
-        return null;
+    public void getEmployeesById(int id) {
+
     }
 
     @Override
-    public List<Employee> getEmployeesByName(String name) {
-        return null;
+    public void getEmployeesByName(String name) {
+
     }
 
     @Override
-    public List<Employee> getEmployeesByRole(String role) {
-        return null;
+    public void getEmployeesByRole(String role) {
+
+    }
+
+    @Override
+    public void getEmployeesByDepartment(String department) {
+
     }
 }

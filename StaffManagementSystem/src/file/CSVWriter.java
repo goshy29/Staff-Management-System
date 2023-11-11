@@ -4,7 +4,6 @@ package file;
 import model.Employee;
 
 import java.io.*;
-import java.util.Optional;
 
 public class CSVWriter {
     public static void write(String file, Employee employee) {

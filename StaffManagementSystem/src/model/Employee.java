@@ -7,13 +7,13 @@ import java.util.Optional;
 public class Employee {
     private int id;
     private String name;
-    private LocalDateTime startDate;
-    private Optional<LocalDateTime> endDate;
+    private String startDate;
+    private Optional<String> endDate;
     private String department;
     private String role;
     private double salary;
 
-    public Employee(int id, String name, LocalDateTime startDate, Optional<LocalDateTime> endDate,
+    public Employee(int id, String name, String startDate, Optional<String> endDate,
                     String department, String role, double salary) {
         this.id = id;
         this.name = name;
@@ -40,19 +40,19 @@ public class Employee {
         this.name = name;
     }
 
-    public LocalDateTime getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(LocalDateTime startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
-    public Optional<LocalDateTime> getEndDate() {
+    public Optional<String> getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Optional<LocalDateTime> endDate) {
+    public void setEndDate(Optional<String> endDate) {
         this.endDate = endDate;
     }
 
